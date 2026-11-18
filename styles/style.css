@@ -1,0 +1,324 @@
+
+/* =====================================
+   Collections Page
+===================================== */
+
+.collections-container {
+    width: min(1120px, 90%);
+    margin: 0 auto;
+}
+
+.collections-header {
+    background: #fff;
+    border-bottom: 1px solid #e8e3dc;
+}
+
+.collections-nav {
+    min-height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.collections-logo {
+    color: #263c32;
+    font-size: 1.45rem;
+    font-weight: 800;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.collections-navigation {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.collections-navigation a {
+    color: #4b514d;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.collections-navigation a:hover,
+.collections-navigation a.active {
+    color: #b36b3d;
+}
+
+.collections-hero {
+    padding: 105px 0;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(135deg, #263c32, #526b55);
+}
+
+.collections-eyebrow {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #b36b3d;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.collections-hero .collections-eyebrow {
+    color: #e9c49c;
+}
+
+.collections-hero h1 {
+    max-width: 800px;
+    margin: 0 auto 18px;
+    font-size: clamp(2.3rem, 5vw, 4rem);
+    line-height: 1.15;
+}
+
+.collections-hero p {
+    max-width: 620px;
+    margin: 0 auto 30px;
+    color: #e6e9e5;
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+
+.collections-button {
+    display: inline-block;
+    padding: 14px 27px;
+    border-radius: 6px;
+    background: #b36b3d;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.collections-button:hover {
+    background: #94532e;
+    transform: translateY(-2px);
+}
+
+.collections-section,
+.collections-featured {
+    padding: 80px 0;
+}
+
+.collections-section {
+    background: #faf8f4;
+}
+
+.collections-section-heading {
+    margin-bottom: 38px;
+    text-align: center;
+}
+
+.collections-section-heading h2 {
+    margin: 0 0 12px;
+    color: #263c32;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.collections-section-heading p {
+    color: #6d746e;
+    line-height: 1.7;
+}
+
+.collections-category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.collections-category-card {
+    padding: 28px 24px;
+    border: 1px solid #e9e3da;
+    border-radius: 10px;
+    background: #fff;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.collections-category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(38, 60, 50, 0.09);
+}
+
+.collections-category-icon {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 2rem;
+}
+
+.collections-category-card h3 {
+    margin: 0 0 10px;
+    color: #263c32;
+    font-size: 1.2rem;
+}
+
+.collections-category-card p {
+    margin: 0;
+    color: #6d746e;
+    line-height: 1.7;
+}
+
+.collections-book-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.collections-book-card {
+    overflow: hidden;
+    border: 1px solid #e9e3da;
+    border-radius: 10px;
+    background: #fff;
+    transition: transform 0.25s ease;
+}
+
+.collections-book-card:hover {
+    transform: translateY(-5px);
+}
+
+.collections-book-cover {
+    min-height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 1.45rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.cover-one {
+    background: linear-gradient(145deg, #76513d, #b88b61);
+}
+
+.cover-two {
+    background: linear-gradient(145deg, #234b59, #65939b);
+}
+
+.cover-three {
+    background: linear-gradient(145deg, #343434, #777);
+}
+
+.cover-four {
+    background: linear-gradient(145deg, #72523c, #b68a55);
+}
+
+.collections-book-info {
+    padding: 20px;
+}
+
+.collections-book-category {
+    color: #b36b3d;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.collections-book-info h3 {
+    margin: 9px 0 6px;
+    color: #263c32;
+    font-size: 1.05rem;
+}
+
+.collections-book-info p {
+    margin: 0;
+    color: #747a75;
+    font-size: 0.92rem;
+}
+
+.collections-cta {
+    padding: 65px 0;
+    background: #263c32;
+    color: #fff;
+    text-align: center;
+}
+
+.collections-cta h2 {
+    margin: 0 0 14px;
+    font-size: clamp(1.7rem, 4vw, 2.5rem);
+}
+
+.collections-cta p {
+    margin: 0 0 25px;
+    color: #e0e6e0;
+    line-height: 1.7;
+}
+
+.collections-footer {
+    padding: 24px 0;
+    background: #1c2d25;
+    color: #d9dfda;
+    text-align: center;
+}
+
+.collections-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Tablet Responsive Design */
+@media (max-width: 768px) {
+    .collections-nav {
+        padding: 18px 0;
+        flex-direction: column;
+    }
+
+    .collections-navigation {
+        justify-content: center;
+        gap: 15px 20px;
+    }
+
+    .collections-hero {
+        padding: 75px 0;
+    }
+
+    .collections-category-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .collections-book-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .collections-section,
+    .collections-featured {
+        padding: 60px 0;
+    }
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 480px) {
+    .collections-navigation {
+        gap: 12px;
+    }
+
+    .collections-navigation a {
+        font-size: 0.83rem;
+    }
+
+    .collections-hero {
+        padding: 60px 0;
+    }
+
+    .collections-category-grid,
+    .collections-book-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .collections-book-cover {
+        min-height: 200px;
+    }
+
+    .collections-section,
+    .collections-featured {
+        padding: 48px 0;
+    }
+}
