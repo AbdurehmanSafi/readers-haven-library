@@ -4,9 +4,10 @@
   "description": "",
   "scripts": {
     "build": "parcel build src/*.html --dist-dir dist",
-feature/collections-page
-    "test": "echo \"Error: no test specified\""
-
+"scripts": {
+  "build": "parcel build src/*.html --dist-dir dist",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
