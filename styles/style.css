@@ -412,3 +412,24 @@ a {
     text-align: center;
     font-size: 14px;
 }
+
+/* JAZIB - MEMBERSHIP PAGE (responsive) */
+@media (max-width: 900px) {
+    .membership-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .membership-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .membership-hero h1 {
+        font-size: 30px;
+    }
+
+    .plan-price {
+        font-size: 30px;
+    }
+}
