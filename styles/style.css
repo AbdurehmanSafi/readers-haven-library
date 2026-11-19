@@ -309,3 +309,127 @@ a {
         text-align: center;
     }
 }
+
+/* JAZIB - MEMBERSHIP PAGE */
+.membership-hero {
+    background-color: var(--light);
+    text-align: center;
+    padding: 60px 0 50px;
+}
+
+.membership-hero h1 {
+    color: var(--primary);
+    font-size: 40px;
+    margin: 8px 0 14px;
+}
+
+.membership-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.membership-section {
+    padding: 60px 0;
+}
+
+.membership-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.plan-card {
+    position: relative;
+    background-color: var(--white);
+    border: 1px solid #e4e1d8;
+    border-top: 6px solid var(--primary);
+    border-radius: 12px;
+    padding: 34px 26px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.14);
+}
+
+.plan-card h2 {
+    color: var(--dark);
+    font-size: 22px;
+}
+
+.plan-featured {
+    border-top-color: var(--secondary);
+    background-color: var(--light);
+}
+
+.plan-badge {
+    position: absolute;
+    top: -14px;
+    right: 18px;
+    background-color: var(--secondary);
+    color: var(--dark);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 14px;
+    border-radius: 20px;
+}
+
+.plan-price {
+    color: var(--primary);
+    font-size: 36px;
+    font-weight: bold;
+    margin: 8px 0 20px;
+}
+
+.plan-price .currency {
+    font-size: 16px;
+    margin-right: 4px;
+}
+
+.plan-price small {
+    color: var(--text);
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.plan-details {
+    list-style: none;
+}
+
+.plan-details li {
+    padding: 10px 0;
+    border-bottom: 1px dashed #d8d5cb;
+}
+
+.plan-details li:last-child {
+    border-bottom: none;
+}
+
+.membership-note {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* JAZIB - MEMBERSHIP PAGE (responsive) */
+@media (max-width: 900px) {
+    .membership-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .membership-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .membership-hero h1 {
+        font-size: 30px;
+    }
+
+    .plan-price {
+        font-size: 30px;
+    }
+}
