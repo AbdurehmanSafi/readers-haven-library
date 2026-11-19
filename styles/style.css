@@ -1,0 +1,311 @@
+
+/* =========================================
+   READERS' HAVEN - SHARED WEBSITE STYLES
+   ========================================= */
+
+/* 1. Global settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #244b3c;
+    --secondary: #d7a85b;
+    --dark: #202c28;
+    --light: #f7f5ef;
+    --white: #ffffff;
+    --text: #555f59;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--white);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 2. Header and navigation */
+.site-header {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 18px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: var(--white);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.main-nav a {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--secondary);
+}
+
+/* 3. Home hero section */
+.hero {
+    background: linear-gradient(120deg, #244b3c, #426c57);
+    color: var(--white);
+    padding: 110px 0;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 850px;
+}
+
+.eyebrow {
+    color: var(--secondary);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.eyebrow) {
+    font-size: 18px;
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #edf2ed;
+}
+
+/* 4. Buttons */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--secondary);
+    color: var(--dark);
+}
+
+.btn-primary:hover {
+    background-color: #e8bd78;
+}
+
+.btn-secondary {
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.btn-secondary:hover {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+/* 5. Introduction */
+.intro-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    text-align: center;
+}
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+.section-heading h2,
+.visit-section h2 {
+    color: var(--primary);
+    font-size: 32px;
+    line-height: 1.3;
+}
+
+.intro-section > p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 6. Feature cards */
+.features-section {
+    background-color: var(--light);
+    padding: 75px 0;
+}
+
+.features-section .section-heading {
+    text-align: center;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #e8e6df;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card h3 {
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    margin-bottom: 18px;
+}
+
+.feature-card a {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+/* 7. Visit information */
+.visit-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.visit-section h2 {
+    margin-bottom: 15px;
+}
+
+.visit-section .btn {
+    margin-top: 20px;
+}
+
+.visit-details {
+    background-color: var(--light);
+    padding: 30px;
+    border-left: 5px solid var(--secondary);
+    border-radius: 6px;
+}
+
+.visit-details h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.visit-details p {
+    margin-bottom: 8px;
+}
+
+/* 8. Footer */
+.site-footer {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 25px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+/* 9. Responsive design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .main-nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 75px 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .visit-section {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .section-heading h2,
+    .visit-section h2 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-nav {
+        gap: 10px;
+    }
+
+    .main-nav a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero-content > p:not(.eyebrow) {
+        font-size: 16px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
