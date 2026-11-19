@@ -1,4 +1,305 @@
 
+/* =========================================
+   READERS' HAVEN - SHARED WEBSITE STYLES
+   ========================================= */
+
+/* 1. Global settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #244b3c;
+    --secondary: #d7a85b;
+    --dark: #202c28;
+    --light: #f7f5ef;
+    --white: #ffffff;
+    --text: #555f59;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--white);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 2. Header and navigation */
+.site-header {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 18px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: var(--white);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.main-nav a {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--secondary);
+}
+
+/* 3. Home hero section */
+.hero {
+    background: linear-gradient(120deg, #244b3c, #426c57);
+    color: var(--white);
+    padding: 110px 0;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 850px;
+}
+
+.eyebrow {
+    color: var(--secondary);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.eyebrow) {
+    font-size: 18px;
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #edf2ed;
+}
+
+/* 4. Buttons */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--secondary);
+    color: var(--dark);
+}
+
+.btn-primary:hover {
+    background-color: #e8bd78;
+}
+
+.btn-secondary {
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.btn-secondary:hover {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+/* 5. Introduction */
+.intro-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    text-align: center;
+}
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+.section-heading h2,
+.visit-section h2 {
+    color: var(--primary);
+    font-size: 32px;
+    line-height: 1.3;
+}
+
+.intro-section > p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 6. Feature cards */
+.features-section {
+    background-color: var(--light);
+    padding: 75px 0;
+}
+
+.features-section .section-heading {
+    text-align: center;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #e8e6df;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card h3 {
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    margin-bottom: 18px;
+}
+
+.feature-card a {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+/* 7. Visit information */
+.visit-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.visit-section h2 {
+    margin-bottom: 15px;
+}
+
+.visit-section .btn {
+    margin-top: 20px;
+}
+
+.visit-details {
+    background-color: var(--light);
+    padding: 30px;
+    border-left: 5px solid var(--secondary);
+    border-radius: 6px;
+}
+
+.visit-details h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.visit-details p {
+    margin-bottom: 8px;
+}
+
+/* 8. Footer */
+.site-footer {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 25px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+/* 9. Responsive design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .main-nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 75px 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .visit-section {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .section-heading h2,
+    .visit-section h2 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-nav {
+        gap: 10px;
+    }
+
+    .main-nav a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
     .hero-content > p:not(.eyebrow) {
         font-size: 16px;
     }
@@ -126,3 +427,481 @@
 
     .membership-hero h1 {
         font-size: 30px;
+    }
+
+    .plan-price {
+        font-size: 30px;
+    }
+}
+
+
+/* =====================================
+   Collections Page
+===================================== */
+
+.collections-container {
+    width: min(1120px, 90%);
+    margin: 0 auto;
+}
+
+.collections-header {
+    background: #fff;
+    border-bottom: 1px solid #e8e3dc;
+}
+
+.collections-nav {
+    min-height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.collections-logo {
+    color: #263c32;
+    font-size: 1.45rem;
+    font-weight: 800;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.collections-navigation {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.collections-navigation a {
+    color: #4b514d;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.collections-navigation a:hover,
+.collections-navigation a.active {
+    color: #b36b3d;
+}
+
+.collections-hero {
+    padding: 105px 0;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(135deg, #263c32, #526b55);
+}
+
+.collections-eyebrow {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #b36b3d;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.collections-hero .collections-eyebrow {
+    color: #e9c49c;
+}
+
+.collections-hero h1 {
+    max-width: 800px;
+    margin: 0 auto 18px;
+    font-size: clamp(2.3rem, 5vw, 4rem);
+    line-height: 1.15;
+}
+
+.collections-hero p {
+    max-width: 620px;
+    margin: 0 auto 30px;
+    color: #e6e9e5;
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+
+.collections-button {
+    display: inline-block;
+    padding: 14px 27px;
+    border-radius: 6px;
+    background: #b36b3d;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.collections-button:hover {
+    background: #94532e;
+    transform: translateY(-2px);
+}
+
+.collections-section,
+.collections-featured {
+    padding: 80px 0;
+}
+
+.collections-section {
+    background: #faf8f4;
+}
+
+.collections-section-heading {
+    margin-bottom: 38px;
+    text-align: center;
+}
+
+.collections-section-heading h2 {
+    margin: 0 0 12px;
+    color: #263c32;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.collections-section-heading p {
+    color: #6d746e;
+    line-height: 1.7;
+}
+
+.collections-category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.collections-category-card {
+    padding: 28px 24px;
+    border: 1px solid #e9e3da;
+    border-radius: 10px;
+    background: #fff;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.collections-category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(38, 60, 50, 0.09);
+}
+
+.collections-category-icon {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 2rem;
+}
+
+.collections-category-card h3 {
+    margin: 0 0 10px;
+    color: #263c32;
+    font-size: 1.2rem;
+}
+
+.collections-category-card p {
+    margin: 0;
+    color: #6d746e;
+    line-height: 1.7;
+}
+
+.collections-book-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.collections-book-card {
+    overflow: hidden;
+    border: 1px solid #e9e3da;
+    border-radius: 10px;
+    background: #fff;
+    transition: transform 0.25s ease;
+}
+
+.collections-book-card:hover {
+    transform: translateY(-5px);
+}
+
+.collections-book-cover {
+    min-height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 1.45rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.cover-one {
+    background: linear-gradient(145deg, #76513d, #b88b61);
+}
+
+.cover-two {
+    background: linear-gradient(145deg, #234b59, #65939b);
+}
+
+.cover-three {
+    background: linear-gradient(145deg, #343434, #777);
+}
+
+.cover-four {
+    background: linear-gradient(145deg, #72523c, #b68a55);
+}
+
+.collections-book-info {
+    padding: 20px;
+}
+
+.collections-book-category {
+    color: #b36b3d;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.collections-book-info h3 {
+    margin: 9px 0 6px;
+    color: #263c32;
+    font-size: 1.05rem;
+}
+
+.collections-book-info p {
+    margin: 0;
+    color: #747a75;
+    font-size: 0.92rem;
+}
+
+.collections-cta {
+    padding: 65px 0;
+    background: #263c32;
+    color: #fff;
+    text-align: center;
+}
+
+.collections-cta h2 {
+    margin: 0 0 14px;
+    font-size: clamp(1.7rem, 4vw, 2.5rem);
+}
+
+.collections-cta p {
+    margin: 0 0 25px;
+    color: #e0e6e0;
+    line-height: 1.7;
+}
+
+.collections-footer {
+    padding: 24px 0;
+    background: #1c2d25;
+    color: #d9dfda;
+    text-align: center;
+}
+
+.collections-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Tablet Responsive Design */
+@media (max-width: 768px) {
+    .collections-nav {
+        padding: 18px 0;
+        flex-direction: column;
+    }
+
+    .collections-navigation {
+        justify-content: center;
+        gap: 15px 20px;
+    }
+
+    .collections-hero {
+        padding: 75px 0;
+    }
+
+    .collections-category-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .collections-book-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .collections-section,
+    .collections-featured {
+        padding: 60px 0;
+    }
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 480px) {
+    .collections-navigation {
+        gap: 12px;
+    }
+
+    .collections-navigation a {
+        font-size: 0.83rem;
+    }
+
+    .collections-hero {
+        padding: 60px 0;
+    }
+
+    .collections-category-grid,
+    .collections-book-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .collections-book-cover {
+        min-height: 200px;
+    }
+
+    .collections-section,
+    .collections-featured {
+        padding: 48px 0;
+    }
+}
+
+
+/* ===== CONTACT PAGE ===== */
+
+.contact-header {
+    background-color: #173f35;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.contact-header h1 {
+    margin-bottom: 8px;
+}
+
+.contact-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-nav a:hover {
+    color: #f4c76b;
+}
+
+.contact-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 35px 20px;
+}
+
+.contact-intro {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.contact-intro h2 {
+    color: #173f35;
+    font-size: 32px;
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-details h2 {
+    grid-column: 1 / -1;
+    color: #173f35;
+}
+
+.contact-card {
+    background-color: #edf4ef;
+    padding: 22px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-card h3 {
+    color: #173f35;
+}
+
+.feedback-section {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.feedback-section h2 {
+    text-align: center;
+    color: #173f35;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.feedback-form button {
+    background-color: #173f35;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.feedback-form button:hover {
+    background-color: #286b56;
+}
+
+.form-note {
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+}
+
+.contact-footer {
+    background-color: #173f35;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+
+    .contact-details {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .contact-intro h2 {
+        font-size: 25px;
+    }
+
+    .feedback-section {
+        padding: 18px;
+    }
+
+}
