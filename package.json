@@ -4,6 +4,10 @@
   "description": "",
   "scripts": {
     "build": "parcel build src/*.html --dist-dir dist",
+"scripts": {
+  "build": "parcel build src/*.html --dist-dir dist",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,5 +16,6 @@
   "type": "commonjs",
   "devDependencies": {
     "parcel": "^2.16.4"
+ develop
   }
 }
