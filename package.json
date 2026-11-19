@@ -4,6 +4,17 @@
   "description": "",
   "scripts": {
     "build": "parcel build src/*.html --dist-dir dist",
+feature/collections-page
     "test": "echo \"Error: no test specified\""
+
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+ develop
   }
 }
